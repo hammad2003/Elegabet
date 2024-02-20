@@ -1,0 +1,21 @@
+<!-- Archivo: res/menu/bottom_navigation_menu.xml -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home_black_24dp" />
+
+    <item
+        android:id="@+id/deportesFragment"
+        android:title="Deportes"
+        android:icon="@drawable/sports_baseball_24" />
+    <item
+        android:id="@+id/misApuestasFragment"
+        android:title="Mis apuestas"
+        android:icon="@drawable/baseline_check_circle_outline_24" />
+    <item
+        android:id="@+id/buscadorFragment"
+        android:title="Buscar"
+        android:icon="@drawable/ic_lupa_black_24dp" />
+</menu>

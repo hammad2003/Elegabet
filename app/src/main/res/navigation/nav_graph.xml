@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chargingScreenFragment">
+
+    <fragment
+        android:id="@+id/chargingScreenFragment"
+        android:name="com.example.elegabet.ChargingScreenFragment"
+        android:label="fragment_charging_screen"
+        tools:layout="@layout/fragment_charging_screen" />
+    <fragment
+        android:id="@+id/chargingScreenFragment1"
+        android:name="com.example.elegabet.ChargingScreenFragment1"
+        android:label="fragment_charging_screen1"
+        tools:layout="@layout/fragment_charging_screen1" />
+    <fragment
+        android:id="@+id/chargingScreenFragment2"
+        android:name="com.example.elegabet.ChargingScreenFragment2"
+        android:label="fragment_charging_screen2"
+        tools:layout="@layout/fragment_charging_screen2" />
+    <fragment
+        android:id="@+id/chargingScreenFragment3"
+        android:name="com.example.elegabet.ChargingScreenFragment3"
+        android:label="fragment_charging_screen3"
+        tools:layout="@layout/fragment_charging_screen3" />
+    <fragment
+        android:id="@+id/chargingScreenFragment4"
+        android:name="com.example.elegabet.ChargingScreenFragment4"
+        android:label="fragment_charging_screen4"
+        tools:layout="@layout/fragment_charging_screen4" />
+    <fragment
+        android:id="@+id/chargingScreenFragment5"
+        android:name="com.example.elegabet.ChargingScreenFragment5"
+        android:label="fragment_charging_screen5"
+        tools:layout="@layout/fragment_charging_screen5" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.elegabet.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/deportesFragment"
+        android:name="com.example.elegabet.DeportesFragment"
+        android:label="fragment_deportes"
+        tools:layout="@layout/fragment_deportes" />
+    <fragment
+        android:id="@+id/misApuestasFragment"
+        android:name="com.example.elegabet.MisApuestasFragment"
+        android:label="fragment_mis_apuestas"
+        tools:layout="@layout/fragment_mis_apuestas" />
+    <fragment
+        android:id="@+id/buscadorFragment"
+        android:name="com.example.elegabet.BuscadorFragment"
+        android:label="fragment_buscador"
+        tools:layout="@layout/fragment_buscador" />
+</navigation>
