@@ -141,20 +141,35 @@
 
                     <TextView
                         android:id="@+id/txtFrame248One"
-                        android:layout_width="0dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:background="@color/gray"
                         android:ellipsize="end"
                         android:gravity="center"
-                        android:background="@color/gray"
                         android:text="1.8"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+
                         android:ellipsize="end"
                         android:gravity="center"
                         android:background="@color/gray"
@@ -164,9 +179,14 @@
 
                     <TextView
                         android:id="@+id/txtFrame24asdasd8One"
-                        android:layout_width="0dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
                         android:ellipsize="end"
                         android:gravity="center"
                         android:background="@color/gray"
