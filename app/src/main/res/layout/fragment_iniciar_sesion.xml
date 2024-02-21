@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearIniciarSesin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/txtBienvenid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="36dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:text="Bienvenido@" />
+
+            <TextView
+                android:id="@+id/txtIniciasesinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp"
+                android:singleLine="true"
+                tools:text="Inicia sesión para continuar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@color/ELEGABET"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mail"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etEggMAIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_strong"
+                    android:drawablePadding="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="6dp"
+                    android:ellipsize="end"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray"
+                    android:textSize="12sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtNotieneasdasdsuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="6dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/ELEGABET"
+                android:textSize="12sp"
+                tools:text="Campo requerido" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@color/ELEGABET"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mail"
+                    tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMasdAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_strong"
+                android:drawablePadding="7dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="6dp"
+                android:ellipsize="end"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                tools:ignore="Autofill"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNassssssssotienesuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="6dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/ELEGABET"
+                android:textSize="12sp"
+                tools:text="Campo requerido" />
+
+            <LinearLayout
+                android:id="@+id/linearRowhasolvidadot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/switchContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="2dp">
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"/>
+
+                </FrameLayout>
+
+                <!-- TextView para "Acuerdate de mi" -->
+                <TextView
+                    android:id="@+id/txtAcuerdatedemi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:paddingLeft="8dp"
+                    android:gravity="center"
+                    android:text="Acuerdate de mi"
+                    android:textColor="#9B9B9B" />
+
+                <!-- Espaciador -->
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+
+                <!-- TextView para "¿Has olvidado tu contraseña?" -->
+                <TextView
+                    android:id="@+id/txtHasolvidadot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:textColor="#9B9B9B"
+                    android:text="¿Has olvidado tu contraseña?" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIniciarSesin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="100dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:text="INICIAR SESIÓN"
+                android:background="@color/ELEGABET"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtNotienesuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#9B9B9B"
+                tools:text="¿No tienes una cuenta?" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInsasdiciarSesin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:text="CREAR AHORA" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

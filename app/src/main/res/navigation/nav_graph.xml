@@ -55,4 +55,25 @@
         android:name="com.example.elegabet.BuscadorFragment"
         android:label="fragment_buscador"
         tools:layout="@layout/fragment_buscador" />
+
+    <fragment
+        android:id="@+id/iniciarSesionFragment"
+        android:name="com.example.elegabet.IniciarSesionFragment"
+        android:label="fragment_iniciar_sesion"
+        tools:layout="@layout/fragment_iniciar_sesion" />
+    <fragment
+        android:id="@+id/registrarseFragment"
+        android:name="com.example.elegabet.RegistrarseFragment"
+        android:label="fragment_registrarse"
+        tools:layout="@layout/fragment_registrarse" />
+    <fragment
+        android:id="@+id/restablecerContasenaFragment"
+        android:name="com.example.elegabet.RestablecerContasenaFragment"
+        android:label="fragment_restablecer_contasena"
+        tools:layout="@layout/fragment_restablecer_contasena" />
+    <fragment
+        android:id="@+id/olvidadoContrasenaFragment"
+        android:name="com.example.elegabet.OlvidadoContrasenaFragment"
+        android:label="fragment_olvidado_contrasena"
+        tools:layout="@layout/fragment_olvidado_contrasena" />
 </navigation>
