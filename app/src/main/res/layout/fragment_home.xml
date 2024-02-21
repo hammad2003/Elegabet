@@ -39,6 +39,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
+                        android:src="@drawable/img_bara_48x47"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_bara_48x47" />
 
@@ -77,6 +78,7 @@
                         android:layout_width="40dp"
                         android:layout_height="56dp"
                         android:scaleType="fitXY"
+                        android:src="@drawable/img_madird_56x40"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_madird_56x40" />
                 </LinearLayout>
@@ -228,6 +230,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
+                        android:src="@drawable/img_image30"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_image30" />
 
@@ -266,6 +269,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:scaleType="fitXY"
+                        android:src="@drawable/img_image31"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_image31" />
                 </LinearLayout>
