@@ -24,7 +24,7 @@
 
     public class MainActivity extends AppCompatActivity {
 
-        private static final long AUTO_NAVIGATION_DELAY = 750;
+        private static final long AUTO_NAVIGATION_DELAY = 500;
         private static final int[] CHARGING_SCREEN_FRAGMENTS = {
                 R.id.chargingScreenFragment,
                 R.id.chargingScreenFragment1,
