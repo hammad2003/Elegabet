@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,7 +58,17 @@ public class RegistrarseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registrarse, container, false);
+        View view = inflater.inflate(R.layout.fragment_registrarse, container, false);
+
+        View btnIniciarSesion = view.findViewById(R.id.RbtnIniciarSesin);
+
+        btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.registro_to_login);
+            }
+        });
+
+        return view;
     }
 }

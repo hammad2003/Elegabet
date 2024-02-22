@@ -10,46 +10,55 @@
         android:name="com.example.elegabet.ChargingScreenFragment"
         android:label="fragment_charging_screen"
         tools:layout="@layout/fragment_charging_screen" />
+
     <fragment
         android:id="@+id/chargingScreenFragment1"
         android:name="com.example.elegabet.ChargingScreenFragment1"
         android:label="fragment_charging_screen1"
         tools:layout="@layout/fragment_charging_screen1" />
+
     <fragment
         android:id="@+id/chargingScreenFragment2"
         android:name="com.example.elegabet.ChargingScreenFragment2"
         android:label="fragment_charging_screen2"
         tools:layout="@layout/fragment_charging_screen2" />
+
     <fragment
         android:id="@+id/chargingScreenFragment3"
         android:name="com.example.elegabet.ChargingScreenFragment3"
         android:label="fragment_charging_screen3"
         tools:layout="@layout/fragment_charging_screen3" />
+
     <fragment
         android:id="@+id/chargingScreenFragment4"
         android:name="com.example.elegabet.ChargingScreenFragment4"
         android:label="fragment_charging_screen4"
         tools:layout="@layout/fragment_charging_screen4" />
+
     <fragment
         android:id="@+id/chargingScreenFragment5"
         android:name="com.example.elegabet.ChargingScreenFragment5"
         android:label="fragment_charging_screen5"
         tools:layout="@layout/fragment_charging_screen5" />
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.elegabet.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
     <fragment
         android:id="@+id/deportesFragment"
         android:name="com.example.elegabet.DeportesFragment"
         android:label="fragment_deportes"
         tools:layout="@layout/fragment_deportes" />
+
     <fragment
         android:id="@+id/misApuestasFragment"
         android:name="com.example.elegabet.MisApuestasFragment"
         android:label="fragment_mis_apuestas"
         tools:layout="@layout/fragment_mis_apuestas" />
+
     <fragment
         android:id="@+id/buscadorFragment"
         android:name="com.example.elegabet.BuscadorFragment"
@@ -60,20 +69,57 @@
         android:id="@+id/iniciarSesionFragment"
         android:name="com.example.elegabet.IniciarSesionFragment"
         android:label="fragment_iniciar_sesion"
-        tools:layout="@layout/fragment_iniciar_sesion" />
+        tools:layout="@layout/fragment_iniciar_sesion" >
+
+        <action
+            android:id="@+id/login_to_olvidar_contrasena"
+            app:destination="@+id/olvidadoContrasenaFragment"/>
+
+        <action
+            android:id="@+id/login_to_home"
+            app:destination="@+id/homeFragment"/>
+
+        <action
+            android:id="@+id/login_to_registro"
+            app:destination="@+id/registrarseFragment"/>
+
+    </fragment>
+
     <fragment
         android:id="@+id/registrarseFragment"
         android:name="com.example.elegabet.RegistrarseFragment"
         android:label="fragment_registrarse"
-        tools:layout="@layout/fragment_registrarse" />
-    <fragment
-        android:id="@+id/restablecerContasenaFragment"
-        android:name="com.example.elegabet.RestablecerContasenaFragment"
-        android:label="fragment_restablecer_contasena"
-        tools:layout="@layout/fragment_restablecer_contasena" />
+        tools:layout="@layout/fragment_registrarse" >
+
+        <action
+            android:id="@+id/registro_to_login"
+            app:destination="@+id/iniciarSesionFragment"/>
+
+    </fragment>
+
     <fragment
         android:id="@+id/olvidadoContrasenaFragment"
         android:name="com.example.elegabet.OlvidadoContrasenaFragment"
         android:label="fragment_olvidado_contrasena"
-        tools:layout="@layout/fragment_olvidado_contrasena" />
+        tools:layout="@layout/fragment_olvidado_contrasena" >
+
+        <action
+            android:id="@+id/olvidar_contrasena_to_restablecer_contrasena"
+            app:destination="@+id/restablecerContasenaFragment"/>
+
+    </fragment>
+
+    <fragment
+
+        android:id="@+id/restablecerContasenaFragment"
+        android:name="com.example.elegabet.RestablecerContasenaFragment"
+        android:label="fragment_restablecer_contasena"
+        tools:layout="@layout/fragment_restablecer_contasena" >
+
+        <action
+            android:id="@+id/restablecer_contrasena_to_login"
+            app:destination="@+id/iniciarSesionFragment"/>
+
+    </fragment>
+
 </navigation>

@@ -29,7 +29,7 @@
                 android:singleLine="true"
                 android:textColor="#FFFFFF"
                 android:textSize="25sp"
-                tools:text="Hola Bienvenido@" />
+                android:text="Hola Bienvenido@" />
 
             <TextView
                 android:id="@+id/txtIniciasesinp"
@@ -42,7 +42,7 @@
                 android:textColor="#9B9B9B"
                 android:textSize="17sp"
                 android:singleLine="true"
-                tools:text="Comencemos, complete para registrarse"/>
+                android:text="Comencemos, complete para registrarse"/>
 
             <TextView
                 android:id="@+id/txtNotieneasdasdsuna"
@@ -58,7 +58,7 @@
                 android:singleLine="true"
                 android:textColor="@color/ELEGABET"
                 android:textSize="12sp"
-                tools:text="Campo requerido" />
+                android:text="Campo requerido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                 android:singleLine="true"
                 android:textColor="@color/ELEGABET"
                 android:textSize="12sp"
-                tools:text="Campo requerido" />
+                android:text="Campo requerido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -164,7 +164,7 @@
                 android:singleLine="true"
                 android:textColor="@color/ELEGABET"
                 android:textSize="12sp"
-                tools:text="Campo requerido" />
+                android:text="Campo requerido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                 android:singleLine="true"
                 android:textColor="@color/ELEGABET"
                 android:textSize="12sp"
-                tools:text="Campo requerido" />
+                android:text="Campo requerido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -269,7 +269,7 @@
                 android:singleLine="true"
                 android:textColor="@color/ELEGABET"
                 android:textSize="12sp"
-                tools:text="Campo requerido" />
+                android:text="Campo requerido" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -347,7 +347,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnIniciarSesin"
+                android:id="@+id/RbtnIniciarSesin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="37dp"

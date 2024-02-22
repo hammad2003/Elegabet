@@ -20,13 +20,13 @@
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
             android:layout_marginStart="37dp"
             android:layout_marginEnd="37dp"
-            android:textColorHint="@color/gray"
+            android:iconifiedByDefault="false"
             android:queryHint="Buscar por eventos, equipos"
-            android:background="@drawable/baseline_search_24"
-            app:iconifiedByDefault="false" />
+            android:textColorHint="@color/gray"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/search_view_bg" />
 
         <LinearLayout
             android:id="@+id/linearRowlinetwentytwo"
@@ -60,7 +60,7 @@
             android:singleLine="true"
             android:textColor="@color/gray"
             android:textSize="12sp"
-            tools:text="EJEMPLOS DE BÚSQUEDA" />
+            android:text="EJEMPLOS DE BÚSQUEDA" />
 
         <LinearLayout
             android:id="@+id/linearRowlinetwentytwo1"

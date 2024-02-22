@@ -1,14 +1,405 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearIniciarSesin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeportesFragment">
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:id="@+id/linearIniciarSesion"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingStart="37dp"
+        android:paddingEnd="37dp">
 
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FÚTBOL"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BALONCESTO"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="VÓLEIBOL"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TENIS"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FÚTBOL AMERICANO"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CRICKET"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FÚTBOL"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BALONCESTO"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="VÓLEIBOL"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TENIS"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FÚTBOL AMERICANO"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLock11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ELEGABET"
+                android:paddingHorizontal="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_mail"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/etEggMAIL11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CRICKET"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ELEGABET"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

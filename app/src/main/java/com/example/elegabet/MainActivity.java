@@ -32,7 +32,7 @@
                 R.id.chargingScreenFragment3,
                 R.id.chargingScreenFragment4,
                 R.id.chargingScreenFragment5,
-                R.id.homeFragment
+                R.id.iniciarSesionFragment
         };
 
         private Handler handler;
@@ -94,7 +94,12 @@
                             destinationId == R.id.chargingScreenFragment2 ||
                             destinationId == R.id.chargingScreenFragment3 ||
                             destinationId == R.id.chargingScreenFragment4 ||
-                            destinationId == R.id.chargingScreenFragment5 ) {
+                            destinationId == R.id.chargingScreenFragment5 ||
+                            destinationId == R.id.iniciarSesionFragment ||
+                            destinationId == R.id.olvidadoContrasenaFragment ||
+                            destinationId == R.id.restablecerContasenaFragment ||
+                            destinationId == R.id.registrarseFragment
+                    ) {
                         binding.bottomNavigation.setVisibility(View.GONE);
                         binding.toolbar.setVisibility(View.GONE);
                     } else {

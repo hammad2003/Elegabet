@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,6 +59,30 @@ public class IniciarSesionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_iniciar_sesion, container, false);
+        View view = inflater.inflate(R.layout.fragment_iniciar_sesion, container, false);
+
+
+        // Configurar OnClickListener para el botón "INICIAR SESIÓN"
+        View btnIniciarSesion = view.findViewById(R.id.ISbtnIniciarSesin);
+        btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar al fragmento de inicio
+                Navigation.findNavController(v).navigate(R.id.login_to_home);
+            }
+        });
+
+
+        // Configurar OnClickListener para el botón "CREAR AHORA"
+        View btnCrearAhora = view.findViewById(R.id.ISbtnInsasdiciarSesin);
+        btnCrearAhora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar al fragmento de restablecimiento de contraseña
+                Navigation.findNavController(v).navigate(R.id.login_to_olvidar_contrasena);
+            }
+        });
+
+        return view;
     }
 }
