@@ -1,14 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RestablecerContasenaFragment">
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearIniciarSesin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/black" >
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/linearIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/txtBienvenid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="37dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+                tools:text="¿Has olvidado tu contraseña?" />
+
+            <TextView
+                android:id="@+id/txtIniciasesinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp"
+                tools:text="No te preocupes, elige una de las siguientes opciones para restablecer tu contraseña de forma segura."/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@color/ELEGABET"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mail"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etEggMAIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_strong"
+                    android:drawablePadding="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="6dp"
+                    android:ellipsize="end"
+                    android:hint="¿Cómo te llamas?"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray"
+                    android:textSize="12sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearRowlinetwentytwo"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="37dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/lineLineTwentyTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="0.48"
+                    android:background="@color/ELEGABET" />
+
+                <TextView
+                    android:id="@+id/txtOr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:hint="or"
+                    android:gravity="center"
+                    android:textColorHint="@color/white" />
+
+                <View
+                    android:id="@+id/lineLineTwentyThree"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="0.48"
+                    android:background="@color/ELEGABET" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@color/ELEGABET"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mail"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etEggMasdAIL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_strong"
+                    android:drawablePadding="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="6dp"
+                    android:ellipsize="end"
+                    android:hint="Su dirección de correo electrónico"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray"
+                    android:textSize="12sp"
+                    tools:ignore="Autofill"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInsasdiciarSesin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="37dp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:text="CREAR AHORA" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
