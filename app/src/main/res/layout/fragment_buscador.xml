@@ -1,14 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearIniciarSesin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuscadorFragment">
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearIniciarSesion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:gravity="start"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:textColorHint="@color/gray"
+            android:queryHint="Buscar por eventos, equipos"
+            android:background="@drawable/baseline_search_24"
+            app:iconifiedByDefault="false" />
+
+        <LinearLayout
+            android:id="@+id/linearRowlinetwentytwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/lineLineTwentyTwo"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="0.48"
+                android:background="@color/ELEGABET" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNotieneasdasdsuna2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="6dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            tools:text="EJEMPLOS DE BÚSQUEDA" />
+
+        <LinearLayout
+            android:id="@+id/linearRowlinetwentytwo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/lineLineTwentyTwo1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="0.48"
+                android:background="#808080" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIniciarSesin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/ELEGABET"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="España - 1ª División >"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIniciarSesin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/ELEGABET"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="España - 2ª División >"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIniciarSesin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:background="@color/ELEGABET"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="España - Liga Endesa ACB >"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
