@@ -36,7 +36,7 @@
                     <ImageView
                         android:id="@+id/imageBaraOne"
                         android:layout_width="47dp"
-                        android:layout_height="48dp"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
@@ -75,7 +75,7 @@
                     <ImageView
                         android:id="@+id/imageMadirdOne"
                         android:layout_width="40dp"
-                        android:layout_height="56dp"
+                        android:layout_height="match_parent"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_madird_56x40" />
                 </LinearLayout>
@@ -409,12 +409,12 @@
 
                     <ImageView
                         android:id="@+id/imageBaraOne2"
-                        android:layout_width="47dp"
-                        android:layout_height="48dp"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_bara_48x47" />
+                        android:src="@drawable/img_arsenal" />
 
                     <LinearLayout
                         android:id="@+id/linearColumnuefaeuropaleaTwo2"
@@ -448,10 +448,10 @@
 
                     <ImageView
                         android:id="@+id/imageMadirdOne2"
-                        android:layout_width="40dp"
-                        android:layout_height="56dp"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_madird_56x40" />
+                        android:src="@drawable/img_roma" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -601,7 +601,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_image30" />
+                        android:src="@drawable/img_bara" />
 
                     <LinearLayout
                         android:id="@+id/linearColumnuefaeuropaleaTwo3"
@@ -638,7 +638,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_image31"/>
+                        android:src="@drawable/img_madird"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -759,6 +759,10 @@
 
 
 
+
+
+
+
         <LinearLayout
             android:id="@+id/linearColumnelegabet4"
             android:layout_width="match_parent"
@@ -784,7 +788,7 @@
                     <ImageView
                         android:id="@+id/imageBaraOne4"
                         android:layout_width="47dp"
-                        android:layout_height="48dp"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="2dp"
                         android:scaleType="fitXY"
@@ -823,7 +827,7 @@
                     <ImageView
                         android:id="@+id/imageMadirdOne4"
                         android:layout_width="40dp"
-                        android:layout_height="56dp"
+                        android:layout_height="match_parent"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_madird_56x40" />
                 </LinearLayout>
@@ -925,6 +929,567 @@
 
                     <TextView
                         android:id="@+id/txtFrame24asdasd8One4"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearColumnelegabet5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearColumnbaraOne5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearRowbaraOne5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageBaraOne5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image30" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnuefaeuropaleaTwo5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtUEFAEuropaLeaTwo5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="UEFA Europa League"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtOne5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0 : 1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageMadirdOne5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image31" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowbarcelona5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBarcelona5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Chelsea"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/viewEllipseTwoOne5"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/orange"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txtTimeOne5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:42"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txasdasdtBarcelona5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Leicester C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowframe248One5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFrame248One5"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:background="@color/gray"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="2.1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtFrame24asdasd8One5"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearColumnelegabet6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearColumnbaraOne6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearRowbaraOne6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageBaraOne6"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arsenal" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnuefaeuropaleaTwo6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtUEFAEuropaLeaTwo6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="UEFA Europa League"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtOne6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0 : 1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageMadirdOne6"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_roma" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowbarcelona6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBarcelona6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Barcelona"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/viewEllipseTwoOne6"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/orange"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txtTimeOne6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:42"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txasdasdtBarcelona6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Real Madrid"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowframe248One6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFrame248One6"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:background="@color/gray"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="2.1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtFrame24asdasd8One6"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearColumnelegabet7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearColumnbaraOne7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearRowbaraOne7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageBaraOne7"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_bara" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnuefaeuropaleaTwo7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtUEFAEuropaLeaTwo7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="UEFA Europa League"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtOne7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0 : 1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageMadirdOne7"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_madird"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowbarcelona7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBarcelona7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Chelsea"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/viewEllipseTwoOne7"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/orange"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txtTimeOne7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:42"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txasdasdtBarcelona7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Leicester C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowframe248One7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFrame248One7"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:background="@color/gray"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="1.8"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:text="2.1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtFrame24asdasd8One7"
                         android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"

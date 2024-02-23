@@ -61,6 +61,16 @@ public class IniciarSesionFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_iniciar_sesion, container, false);
 
+        // Configurar OnClickListener para el texto "¿Has olvidado tu contraseña?"
+        View btnOlvidarContrasena = view.findViewById(R.id.IStxtHasolvidadot);
+        btnOlvidarContrasena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar al fragmento de inicio
+                Navigation.findNavController(v).navigate(R.id.login_to_olvidar_contrasena);
+            }
+        });
+
 
         // Configurar OnClickListener para el botón "INICIAR SESIÓN"
         View btnIniciarSesion = view.findViewById(R.id.ISbtnIniciarSesin);
@@ -79,7 +89,7 @@ public class IniciarSesionFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Navegar al fragmento de restablecimiento de contraseña
-                Navigation.findNavController(v).navigate(R.id.login_to_olvidar_contrasena);
+                Navigation.findNavController(v).navigate(R.id.login_to_registro);
             }
         });
 
