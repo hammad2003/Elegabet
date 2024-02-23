@@ -78,10 +78,13 @@
             toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
+            // Desactivar la flecha de retroceso en la barra de herramientas
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+
             NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
 
             NavigationUI.setupWithNavController(binding.bottomNavigation, navController);
-            NavigationUI.setupWithNavController(binding.toolbar, navController);
+//            NavigationUI.setupWithNavController(binding.toolbar, navController);
 
 
             navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {

@@ -60,7 +60,7 @@ public class BuscadorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Toolbar mainToolbar = requireActivity().findViewById(R.id.toolbar);
-        mainToolbar.setTitle("Buscador");
+        mainToolbar.setTitle("ELEGABET");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_buscador, container, false);
     }

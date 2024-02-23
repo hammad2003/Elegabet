@@ -21,7 +21,33 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/ELEGABET"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <!-- Incluir tu CardView con la foto de perfil dentro de la barra de herramientas -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#EE009D"
+                app:cardElevation="4dp"
+                android:clipToOutline="true"
+                android:outlineProvider="background">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/peterparker" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.Toolbar>
 
         <!-- Contenido principal de la actividad -->
         <FrameLayout
