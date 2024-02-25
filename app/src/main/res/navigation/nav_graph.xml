@@ -122,4 +122,30 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/apuestaFragment"
+        android:name="com.example.elegabet.ApuestaFragment"
+        android:label="fragment_apuesta"
+        tools:layout="@layout/fragment_apuesta" />
+    <fragment
+        android:id="@+id/anadirDineroFragment"
+        android:name="com.example.elegabet.AnadirDineroFragment"
+        android:label="fragment_anadir_dinero"
+        tools:layout="@layout/fragment_anadir_dinero" />
+    <fragment
+        android:id="@+id/futbolFragment"
+        android:name="com.example.elegabet.FutbolFragment"
+        android:label="fragment_futbol"
+        tools:layout="@layout/fragment_futbol" />
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.elegabet.EditarPerfilFragment"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+    <fragment
+        android:id="@+id/infoPartidoFragment"
+        android:name="com.example.elegabet.InfoPartidoFragment"
+        android:label="fragment_info_partido"
+        tools:layout="@layout/fragment_info_partido" />
+
 </navigation>
