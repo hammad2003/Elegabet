@@ -8,24 +8,28 @@
         <LinearLayout android:id="@+id/linearColumnarrowleft"
             android:layout_gravity="center"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:layout_marginEnd="33dp"
             android:layout_marginStart="33dp"
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:orientation="vertical">
-            <androidx.appcompat.widget.Toolbar android:gravity="start"
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="start"
                 android:id="@+id/toolbarToolbar"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="9dp"
-                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp">
                 <LinearLayout android:id="@+id/linearRowarrowleft"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:tint="@color/gray"
                         android:src="@drawable/baseline_arrow_back_ios_new_24" />
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFONDOS"
@@ -43,9 +47,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="83dp"
                 android:layout_marginStart="83dp"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
+                android:textSize="27dp"
+                android:textStyle="bold"
                 android:text="0.00€"/>
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearTab"
@@ -105,30 +111,19 @@
                     android:background="@color/ELEGABET"
                     android:textColor="@color/white"
                     android:orientation="vertical">
-                    <FrameLayout android:id="@+id/frameStackcomputer"
-                        android:layout_height="16dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp" android:layout_width="22dp">
+
                         <ImageView android:id="@+id/imageComputer"
                             android:layout_gravity="start"
                             android:layout_height="16dp"
-                            android:layout_width="22dp"
+                            android:layout_marginEnd="111dp"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_width="19dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/img_computer"
+                            android:src="@drawable/baseline_add_card_24"
                             tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_computer"/>
-                        <ImageView android:id="@+id/imageVector"
-                            android:layout_gravity="top|start"
-                            android:layout_height="2dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_width="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/img_vector"
-                            tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_vector"/>
-                    </FrameLayout>
+                            app:tint="@color/white"
+                            tools:src="@drawable/baseline_add_card_24"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtVisacard"
                         android:layout_height="wrap_content"
@@ -138,39 +133,30 @@
                         android:layout_marginTop="36dp"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
+                        android:textStyle="bold"
                         android:textColor="@color/white"
                         android:text="Visa Card"/>
                 </LinearLayout>
                 <LinearLayout android:gravity="end"
                     android:id="@+id/linearVariants1"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="23dp"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
                     android:background="@color/gray"
                     android:orientation="vertical">
-                    <ImageView android:id="@+id/imageXMLID34path"
-                        android:layout_gravity="start"
-                        android:layout_height="5dp"
-                        android:layout_marginEnd="116dp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="18dp"
-                        android:layout_width="4dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_xmlid34path"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_xmlid34path"/>
+
                     <ImageView android:id="@+id/imageFavorite"
                         android:layout_gravity="start"
                         android:layout_height="16dp"
+                        android:layout_width="18dp"
                         android:layout_marginEnd="111dp"
                         android:layout_marginStart="19dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_width="19dp"
+                        android:layout_marginTop="18dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_favorite"
+                        android:src="@drawable/apple_logo"
                         tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_favorite"/>
+                        tools:src="@drawable/apple_logo"/>
                     <TextView android:ellipsize="end"
                         android:gravity="start"
                         android:id="@+id/txtApplePay"
@@ -181,11 +167,12 @@
                         android:layout_marginTop="35dp"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:text="Apple Pay"/>
                 </LinearLayout>
             </LinearLayout>
-            <TextView android:ellipsize="end" android:gravity="start"
+            <TextView android:ellipsize="end"
+                android:gravity="start"
                 android:id="@+id/txtCard"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
@@ -194,8 +181,10 @@
                 android:paddingStart="12dp"
                 android:paddingTop="17dp"
                 android:singleLine="true"
+                android:textStyle="bold"
                 android:text="4567 **** **** 7702"/>
-            <TextView android:ellipsize="end" android:gravity="start"
+            <TextView android:ellipsize="end"
+                android:gravity="start"
                 android:id="@+id/txtPriceOne"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -210,23 +199,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="24dp"
-                android:layout_width="match_parent" android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
                 <CheckBox
                     android:id="@+id/checkbox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical" />
                 <TextView android:id="@+id/txtAceptolostrm"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="13dp"
                     android:layout_marginTop="1dp"
                     android:layout_weight="0.91"
-                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
                     android:lineSpacingExtra="8dp"
                     android:text="Acepto los términos de uso de los servicios"/>
             </LinearLayout>
             <androidx.appcompat.widget.AppCompatButton
-                android:ellipsize="end" android:gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
                 android:id="@+id/btnDepositarCantidad"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
