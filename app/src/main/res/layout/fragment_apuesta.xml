@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/frameApuesta"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -13,17 +14,13 @@
         android:background="@color/ELEGABET"
         android:orientation="vertical">
 
-        <!-- Contenido de tu diseño -->
-        <View
-            android:id="@+id/viewRectangle118"
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="4dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="268dp"
-            android:layout_marginEnd="175dp"
-            android:layout_marginStart="175dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_margin="16dp"
+            app:tint="@color/white" />
+
 
         <LinearLayout android:id="@+id/linearTicketinfo"
             android:layout_gravity="center"
@@ -34,8 +31,17 @@
             android:layout_marginBottom="35dp"
             android:orientation="vertical">
 
+            <View
+                android:id="@+id/viewRectangle118"
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="37dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white" />
+
             <LinearLayout android:id="@+id/linearTitlebalans"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
 
@@ -47,6 +53,7 @@
                     android:singleLine="true"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="Hacer apuesta"/>
 
                 <LinearLayout android:id="@+id/linearRowplus"
@@ -56,12 +63,14 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:background="@drawable/rectangle_bg_gray_100_radius_4_16"
+                        android:background="@drawable/baseline_add_box_24"
                         android:id="@+id/btnPlus"
                         android:layout_height="24dp"
                         android:layout_width="24dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/img_plus"
+                        android:gravity="center"
+                        android:src="@drawable/baseline_add_box_24"
+                        app:tint="@color/white"
                         tools:ignore="ContentDescription"/>
 
                     <TextView android:ellipsize="end"
@@ -71,6 +80,7 @@
                         android:layout_marginStart="6dp"
                         android:singleLine="true"
                         android:layout_gravity="center"
+                        android:gravity="center"
                         android:textColor="@color/white"
                         android:text="200€"/>
 
@@ -81,7 +91,7 @@
 
             <View
                 android:id="@+id/lineBorder"
-                android:layout_width="331dp"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="8dp"
@@ -96,46 +106,47 @@
                 android:layout_width="match_parent" android:orientation="vertical">
 
                 <LinearLayout android:id="@+id/linearRowbarcelonarea"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="9dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="1dp"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
 
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtBarcelonaRea"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
-                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
                         android:singleLine="true"
                         android:textColor="@color/white"
+                        android:gravity="start||center"
                         android:text="Barcelona - Real Madrid"/>
 
-                    <LinearLayout android:id="@+id/linearRowsave"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginStart="111dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_weight="0.24"
-                        android:layout_width="0dp" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linearRowpaaalus"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="142dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <View
                             android:id="@+id/viewEllipseTwoOne"
                             android:layout_width="8dp"
                             android:layout_height="8dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
                             android:background="@color/orange"
                             android:gravity="center" />
 
                         <TextView android:ellipsize="end"
-                            android:id="@+id/txt4930"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.67"
-                            android:layout_width="0dp"
+                            android:id="@+id/txtTime"
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="6dp"
                             android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
                             android:textColor="@color/gray"
                             android:text="49:30"/>
+
                     </LinearLayout>
 
 
@@ -149,11 +160,10 @@
 
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtSegundoequipo"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginBottom="1dp"
                         android:layout_marginTop="1dp"
-                        android:layout_weight="0.86"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:singleLine="true"
                         android:textColor="@color/gray"
                         android:text="Segundo equipo va ganando"/>
@@ -165,6 +175,7 @@
                         android:layout_weight="0.14"
                         android:layout_width="0dp"
                         android:singleLine="true"
+                        android:gravity="center"
                         android:textColor="@color/white"
                         android:text="2.1"/>
                 </LinearLayout>
@@ -180,7 +191,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
                         android:layout_width="0dp"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:orientation="horizontal" >
 
                         <TextView
@@ -191,20 +202,20 @@
                             android:layout_marginTop="13dp"
                             android:layout_marginBottom="11dp"
                             android:layout_weight="0.46"
+                            android:gravity="center"
                             android:ellipsize="end"
                             android:singleLine="true"
                             android:text="200€" />
 
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtOne"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_marginBottom="11dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="13dp"
-                            android:layout_weight="0.1"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:singleLine="true"
-                            android:background="@drawable/baseline_check_circle_outline_24"/>
+                            android:background="@drawable/baseline_arrow_forward_24"/>
 
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtPriceTwo"
@@ -215,13 +226,15 @@
                             android:layout_marginTop="13dp"
                             android:layout_weight="0.44"
                             android:layout_width="0dp"
+                            android:gravity="center"
                             android:singleLine="true"
                             android:textColor="@color/green"
                             android:text="420€"/>
 
                     </LinearLayout>
                     <androidx.appcompat.widget.AppCompatButton
-                        android:ellipsize="end" android:gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
                         android:id="@+id/btnApostar"
                         android:layout_height="41dp"
                         android:layout_marginStart="8dp"
@@ -232,7 +245,7 @@
                         android:paddingTop="12dp"
                         android:singleLine="true"
                         android:textAllCaps="false"
-                        android:background="@color/black"
+                        android:background="@drawable/black_direct"
                         android:textColor="@color/white"
                         android:text="Apostar"/>
                 </LinearLayout>
@@ -240,7 +253,8 @@
                 <LinearLayout android:id="@+id/linearPattern"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
 
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtPriceThree"
@@ -252,7 +266,7 @@
                         android:paddingStart="17dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:textColor="@color/black"
                         android:text="5€"/>
 
@@ -266,7 +280,7 @@
                         android:paddingStart="13dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:textColor="@color/black"
                         android:text="20€"/>
 
@@ -280,7 +294,7 @@
                         android:paddingStart="13dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:textColor="@color/black"
                         android:text="50€"/>
 
@@ -294,7 +308,7 @@
                         android:paddingStart="10dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:textColor="@color/black"
                         android:text="100€"/>
 
@@ -308,7 +322,7 @@
                         android:paddingStart="10dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/black"
+                        android:background="@drawable/black_direct"
                         android:textColor="@color/white"
                         android:text="200€"/>
 
@@ -322,7 +336,7 @@
                         android:paddingStart="10dp"
                         android:paddingTop="9dp"
                         android:singleLine="true"
-                        android:background="@color/white"
+                        android:background="@drawable/border_white_direct"
                         android:textColor="@color/black"
                         android:text="500€"/>
                 </LinearLayout>

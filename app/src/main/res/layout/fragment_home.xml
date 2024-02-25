@@ -16,6 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -203,6 +205,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -390,6 +394,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -577,6 +583,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -768,6 +776,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -955,6 +965,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -1142,6 +1154,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
@@ -1329,6 +1343,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
+            android:padding="10dp"
+            android:background="@drawable/border_gray_direct"
             android:gravity="start"
             android:orientation="vertical">
 
