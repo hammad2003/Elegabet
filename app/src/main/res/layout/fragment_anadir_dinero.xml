@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="117dp"
-                    android:gravity="start||center"
+                    android:gravity="start|center_vertical"
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:text="FONDOS"
@@ -252,7 +252,7 @@
                 android:layout_marginStart="13dp"
                 android:layout_marginTop="1dp"
                 android:layout_weight="0.91"
-                android:gravity="start||center"
+                android:gravity="start|center_vertical"
                 android:text="Acepto los términos de uso de los servicios" />
         </LinearLayout>
 
