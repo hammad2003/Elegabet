@@ -17,7 +17,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp">
 
-        <androidx.appcompat.widget.Toolbar
+        <LinearLayout
             android:id="@+id/toolbarToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                     android:text="FONDOS"
                     android:textAllCaps="true" />
             </LinearLayout>
-        </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/txtPrice"
