@@ -225,6 +225,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/aapostarsehadicho"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"

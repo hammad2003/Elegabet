@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/flecaiconatrashome2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
@@ -63,8 +64,8 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:background="@drawable/baseline_add_box_24"
                         android:id="@+id/btnPlus"
+                        android:background="@drawable/baseline_add_box_24"
                         android:layout_height="24dp"
                         android:layout_width="24dp"
                         android:scaleType="fitCenter"

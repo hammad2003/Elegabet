@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,10 +56,26 @@ public class AnadirDineroFragment extends Fragment {
         }
     }
 
+    private ImageView flechaIconAtrasHome3;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_anadir_dinero, container, false);
+        View view = inflater.inflate(R.layout.fragment_anadir_dinero, container, false);
+
+        // Obtener la referencia del ImageView
+        flechaIconAtrasHome3 = view.findViewById(R.id.flecaiconatrashome3);
+
+        // Configurar el OnClickListener para la navegación
+        flechaIconAtrasHome3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar hacia el fragmento FutbolFragment utilizando la ID definida en el action
+                Navigation.findNavController(v).navigate(R.id.futbolFragment);
+            }
+        });
+
+        return view;
     }
 }

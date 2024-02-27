@@ -45,7 +45,12 @@
         android:id="@+id/homeFragment"
         android:name="com.example.elegabet.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/home_to_info_partido"
+            app:destination="@+id/infoPartidoFragment"/>
+    </fragment>
 
     <fragment
         android:id="@+id/deportesFragment"
@@ -126,26 +131,60 @@
         android:id="@+id/apuestaFragment"
         android:name="com.example.elegabet.ApuestaFragment"
         android:label="fragment_apuesta"
-        tools:layout="@layout/fragment_apuesta" />
+        tools:layout="@layout/fragment_apuesta">
+
+        <action
+            android:id="@+id/apuesta_to_fultbol"
+            app:destination="@+id/futbolFragment"/>
+
+        <action
+            android:id="@+id/apuesta_to_anadir_dinero"
+            app:destination="@+id/anadirDineroFragment"/>
+
+    </fragment>
+
     <fragment
         android:id="@+id/anadirDineroFragment"
         android:name="com.example.elegabet.AnadirDineroFragment"
         android:label="fragment_anadir_dinero"
-        tools:layout="@layout/fragment_anadir_dinero" />
+        tools:layout="@layout/fragment_anadir_dinero" >
+
+        <action
+            android:id="@+id/anadir_dinero_to_futbol"
+            app:destination="@+id/futbolFragment"/>
+    </fragment>
+
     <fragment
         android:id="@+id/futbolFragment"
         android:name="com.example.elegabet.FutbolFragment"
         android:label="fragment_futbol"
-        tools:layout="@layout/fragment_futbol" />
+        tools:layout="@layout/fragment_futbol">
+
+        <action
+            android:id="@+id/fultbol_to_apuesta"
+            app:destination="@+id/apuestaFragment"/>
+    </fragment>
+
     <fragment
         android:id="@+id/editarPerfilFragment"
         android:name="com.example.elegabet.EditarPerfilFragment"
         android:label="fragment_editar_perfil"
-        tools:layout="@layout/fragment_editar_perfil" />
+        tools:layout="@layout/fragment_editar_perfil">
+
+        <action
+            android:id="@+id/editar_perfil_to_home"
+            app:destination="@+id/homeFragment"/>
+    </fragment>
+
     <fragment
         android:id="@+id/infoPartidoFragment"
         android:name="com.example.elegabet.InfoPartidoFragment"
         android:label="fragment_info_partido"
-        tools:layout="@layout/fragment_info_partido" />
+        tools:layout="@layout/fragment_info_partido">
+
+        <action
+            android:id="@+id/info_partido_to_home"
+            app:destination="@+id/homeFragment"/>
+    </fragment>
 
 </navigation>

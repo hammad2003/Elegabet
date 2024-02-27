@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,10 +57,37 @@ public class ApuestaFragment extends Fragment {
         }
     }
 
+    private ImageView flechaIconAtrasHome2;
+    private ImageButton btnPlus;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_apuesta, container, false);
+        View view = inflater.inflate(R.layout.fragment_apuesta, container, false);
+
+        // Obtener la referencia del ImageView
+        flechaIconAtrasHome2 = view.findViewById(R.id.flecaiconatrashome2);
+        btnPlus = view.findViewById(R.id.btnPlus);
+
+        // Configurar el OnClickListener para la navegación
+        flechaIconAtrasHome2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar hacia el fragmento FutbolFragment utilizando la ID definida en el action
+                Navigation.findNavController(v).navigate(R.id.apuesta_to_fultbol);
+            }
+        });
+
+        // Configurar el OnClickListener para el botón btnPlus
+        btnPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar hacia el fragmento AnadirDineroFragment utilizando la ID definida en el action
+                Navigation.findNavController(v).navigate(R.id.apuesta_to_anadir_dinero);
+            }
+        });
+
+        return view;
     }
 }

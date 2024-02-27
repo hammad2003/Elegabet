@@ -4,8 +4,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,10 +58,26 @@ public class FutbolFragment extends Fragment {
         }
     }
 
+    private LinearLayout Aapostarsehadicho;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_futbol, container, false);
+        View view = inflater.inflate(R.layout.fragment_futbol, container, false);
+
+        // Obtener la referencia del TextView
+        TextView aapostarsehadichoTextView = view.findViewById(R.id.aapostarsehadicho);
+
+        // Configurar el OnClickListener para la navegación
+        aapostarsehadichoTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar hacia el fragmento ApuestaFragment utilizando la ID definida en el action
+                Navigation.findNavController(v).navigate(R.id.apuestaFragment);
+            }
+        });
+
+        return view;
     }
 }

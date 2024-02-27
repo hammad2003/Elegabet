@@ -4,10 +4,12 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -56,12 +58,28 @@ public class DeportesFragment extends Fragment {
         }
     }
 
+    private LinearLayout Suuuu;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Toolbar mainToolbar = requireActivity().findViewById(R.id.toolbar);
         mainToolbar.setTitle("ELEGABET");
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_deportes, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_deportes, container, false);
+
+        // Obtener referencia al LinearLayout
+        Suuuu = view.findViewById(R.id.suuuu);
+
+        // Configurar OnClickListener para el LinearLayout
+        Suuuu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navegar al fragmento infoPartidoFragment
+                Navigation.findNavController(v).navigate(R.id.futbolFragment);
+            }
+        });
+
+        return view;
     }
 }
