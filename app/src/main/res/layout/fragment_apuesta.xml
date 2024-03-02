@@ -42,7 +42,7 @@
                     android:layout_width="50dp"
                     android:layout_height="4dp"
                     android:gravity="start|center_vertical"
-                    android:layout_marginStart="117dp"
+                    android:layout_marginStart="130dp"
                     android:background="@color/white" />
             </LinearLayout>
         </LinearLayout>
