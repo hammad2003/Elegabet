@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,6 +80,23 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(v).navigate(R.id.infoPartidoFragment);
             }
         });
+
+//        ViewPager2 viewPager = view.findViewById(R.id.viewPager);
+//        ViewPagerAdapter adapter = new ViewPagerAdapter(requireActivity());
+//        viewPager.setAdapter(adapter);
+//
+//        // Permitir el swipe solo hacia la derecha
+//        viewPager.setUserInputEnabled(false);
+//        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+//            @Override
+//            public void onPageSelected(int position) {
+//                if (position > 0) {
+//                    viewPager.setUserInputEnabled(true);
+//                } else {
+//                    viewPager.setUserInputEnabled(false);
+//                }
+//            }
+//        });
 
         return view;
     }
